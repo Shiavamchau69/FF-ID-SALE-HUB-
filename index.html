@@ -53,7 +53,9 @@
         <div class="modal-content">
             <h3 class="text-2xl font-bold mb-4">Deposit Money</h3>
             <p class="mb-4">Copy UPI ID the to pay. After paying, fill the details below.
-            <p> UPI id sc6218067@ptaxis"
+            <button onclick="navigator.clipboard.writeText('sc6218067@ptaxis'); alert('Copied ✅');">
+Copy UPI
+            </button>
             <input type="text" id="payer-name" placeholder="Name you paid with" class="w-full p-2 mb-3 rounded bg-gray-700 border border-gray-600">
             <input type="text" id="utr-id" placeholder="UTR/Transaction ID" class="w-full p-2 mb-3 rounded bg-gray-700 border border-gray-600">
             <input type="number" id="deposit-amount" placeholder="Amount Paid" class="w-full p-2 mb-4 rounded bg-gray-700 border border-gray-600">
